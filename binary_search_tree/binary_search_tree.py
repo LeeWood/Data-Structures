@@ -183,7 +183,7 @@ class BSTNode:
     # Print Pre-order recursive DFT
     def pre_order_dft(self, bst):
         while bst is not None:
-            # prints root, then all of the left children first WHY IS THIS "PRE" ORDER
+            # prints root, then all of the left children first
             # if there is a left child, run dft_print on that left child
             if self.left:
                 return self.left.dft_print(self) 
@@ -216,8 +216,6 @@ bst.insert(3)
 bst.insert(4)
 bst.insert(2)
 
-print('INSERT ORDER: 1 -> 8 -> 9 -> 7 -> 6 -> -> 3 -> 4 -> 2')
-print('INSERT ORDER: \n      1\n       \ \n        8\n       /\n      5\n     /\ \n    3  7\n   / \n  2\n /\ \n4  6')
 print("elegant methods")
 print("pre order")
 bst.pre_order_dft(bst)
